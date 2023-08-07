@@ -1,0 +1,2 @@
+isolar las pruebas significa, que un esenario de pruebas no puede afectar a otras, ya que es unica es decir isolada,
+teardown: demoler normalemente se ocupan en pruebas de integracion, esto cuando tenemos una base de datos y no queremos que el esenario de pruebas afecte a otra, por lo tanto empezamos a demoler los casos de prueba, el estado que dejo la prueba anterios, para que todos las pruebas tenga un caso unico desde 0
