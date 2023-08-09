@@ -90,5 +90,11 @@ la piramide del testing es
 
 el objetivo de las pruebas de integracion es probar todos los componentes interacturando entre si, a diferencia de las pruebas unitarias, solo probamos un elemento en especifico, en las pruebas de integracion de hace mocking a todo lo de terceros como bases de datos o apis.
 para ello se utiliza supertest 
+"test:e2e": "test --config ./e2e/test.e2e.json --forceExit",
+establecemos un nueva forma de ejecutar le decimos que tome la configuracion que hay en ese archivo y si llega a haber algo que quede pendiente que force la salida
 
+una prueba punto a punto o end to end, no solo va aprobar el flujo, sino que vamos a hacer todo, la consulta hasta la base de datos e incluso hacer verificaciones si a la hora de la creacion inserto la base de datos que mandamos, o incluso insertar semillas de datos, es decir que podemos tener una base de datos prepoblada y si hacemos request deberia devolver esa informacion, normalmente no nos comunicacion con la base de datos que tenemos en produccion, si no que lo que hacemos es en vez de apuntar a la base de datos real, apuntamos a una base de datos en la cual se de prueba.
 
+ui test
+significa emular dispositivos los cuales los usuarios tendrian.
+para hacer pruebas de ui utilizamos playwright
