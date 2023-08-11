@@ -1,0 +1,35 @@
+name: API CI
+# Esto es para mono repos, como tenemos varios proyectos nececitamos una configuracion especial
+#on: [push]
+on: 
+  push:
+    paths:
+      - "./api/**"
+      - ".github/workflows/api-ci.yml"
+
+defaults: 
+  run:
+    working-directory: ./api
+
+#para ejecutar nuestros progrmas de testing lo hacemos con una maquina, algunas paquerias y node, eso tenemos que decirle a github
+# actions/checkout es para clonar nuestro repositorio 
+# ci continuous install
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Nodejs
+        uses: actions/setup-node@v2
+        with: 
+          node-version: 14
+          cache: 'npm'
+          cache-dependecy-path: ./api/package-lock.json
+      - name: install
+        shell: bash
+        run: npm ci
+      - name: run unit test
+        shell: bash
+        run: npm run test
+        

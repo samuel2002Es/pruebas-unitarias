@@ -59,6 +59,7 @@ caja blanca importa el proceso de la funcion.
 una utilidad importante a la hora de hacer pruebas unitarias es el cover Report o reporte de covertura
 
 Coverage report
+npm jest --coverage 
   el porcentage de covertura nos ayuda a tener un equilibrio y no hacer pruebas innecesarias
   el coverge report es una medida porcentual que nos indica que tanto del codigo hemos hecho pruebas unitarias
   Es una medida porcentual que evalua el grado que un codigo ha sido ejecutado
@@ -98,3 +99,4 @@ una prueba punto a punto o end to end, no solo va aprobar el flujo, sino que vam
 ui test
 significa emular dispositivos los cuales los usuarios tendrian.
 para hacer pruebas de ui utilizamos playwright
+ci = continuous integration
