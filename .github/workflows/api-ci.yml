@@ -14,7 +14,6 @@ defaults:
 #para ejecutar nuestros progrmas de testing lo hacemos con una maquina, algunas paquerias y node, eso tenemos que decirle a github
 # actions/checkout es para clonar nuestro repositorio 
 # ci continuous install
-# Ejecutar
 jobs:
   unit-test:
     runs-on: ubuntu-latest
