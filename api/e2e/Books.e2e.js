@@ -1,4 +1,5 @@
 // prueba de todos los componentes
+// eslint-disable-next-line max-len
 // como esto es una prueba de integracion metemos todo el flujo excepto la base de datos, routing servicio, modelo de datos, etc
 
 const request = require('supertest');
