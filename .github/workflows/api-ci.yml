@@ -28,7 +28,7 @@ jobs:
           cache-dependecy-path: ./api/package-lock.json
       - name: install
         shell: bash
-        run: npm ci
+        run: npm install
       - name: run unit test
         shell: bash
         run: npm run test
