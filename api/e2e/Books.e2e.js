@@ -59,7 +59,7 @@ describe('Test for books', () => {
       // Act
       return request(app)
         .get('/api/v1/books')
-        .expect(400)
+        .expect(200)
         .then(({ body }) => {
           console.log(body);
           // Assert
