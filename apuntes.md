@@ -100,3 +100,5 @@ ui test
 significa emular dispositivos los cuales los usuarios tendrian.
 para hacer pruebas de ui utilizamos playwright
 ci = continuous integration
+
+cuando creamos las pruebas e2e en github actions debemos tener mucho cuidado con el url, ya que debe de apuntar a a imagen de docker que creamos y no al localhost que antes tenemos
