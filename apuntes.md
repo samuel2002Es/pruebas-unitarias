@@ -102,3 +102,4 @@ para hacer pruebas de ui utilizamos playwright
 ci = continuous integration
 
 cuando creamos las pruebas e2e en github actions debemos tener mucho cuidado con el url, ya que debe de apuntar a a imagen de docker que creamos y no al localhost que antes tenemos
+en ocaciones se tienen problemas en el install ci, ese comando es por la version de node, y ci es para entornos de prueba en git actions pero tambien funciona escribir install 
